@@ -8,3 +8,4 @@ Tools for python development - command line.
 
 
 - create a python package: `creator p [package_name]`
+- create a python package project: `create pj [project_name]`
