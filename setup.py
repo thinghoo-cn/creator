@@ -4,6 +4,9 @@ requires = [
 ]
 
 dev_requires = [
+    'invoke',
+    'pytest',
+    'pytest-sugar',
 ]
 
 setup(
