@@ -1,4 +1,10 @@
 import click
+from . import app
+
+
+@click.group()
+def cli():
+    pass
 
 
 @click.command()
@@ -11,4 +17,19 @@ def hello(count, name):
         click.echo('Hello %s!' % name)
 
 
-hello()
+@click.command()
+@click.option('--package_name', default='', help='package name')
+def create_package(package_name):
+    """create python package command
+
+    Args:
+        package_name (str): name of package
+    """
+    if package_name is '':
+        raise Exception('empty package name.')
+    app.create_package(package_name=package_name)
+    
+
+cli.add_command(hello)
+cli.add_command(create_package)
+cli()
