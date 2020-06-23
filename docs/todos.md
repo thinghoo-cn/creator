@@ -1,6 +1,7 @@
 # TODO
 
 
-[ ] support cookiecutter
-[ ] support for template
-[ ] software enginering support
+- [ ] click support
+- [ ] support cookiecutter
+- [ ] support for template
+- [ ] software enginering support
