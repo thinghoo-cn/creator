@@ -1,6 +1,7 @@
 from setuptools import setup
 
 requires = [
+    'click'
 ]
 
 dev_requires = [
