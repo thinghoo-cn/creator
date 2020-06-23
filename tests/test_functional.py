@@ -2,7 +2,7 @@ import os
 import shutil
 from unittest import TestCase
 
-from creator import app
+from creator import libs
 
 
 class FunctionalTest(TestCase):
@@ -17,6 +17,6 @@ class FunctionalTest(TestCase):
     def test_create_package(self):
         package_name = 'tmp'
         
-        res = app.create_package(package_name=package_name)
+        res = libs.create_package(package_name=package_name)
         self.assertTrue(os.path.exists(res))
         self.assertTrue(os.path.exists(f'{res}/__init__.py'))
