@@ -21,5 +21,9 @@ setup(
         'creator.main': [
             'main = creator.__main__'
         ]
-    }
+    },
+
+    # pytest config
+    setup_requires=['pytest-runner'],
+    test_requires=['pytest'],
 )

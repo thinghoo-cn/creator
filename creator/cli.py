@@ -1,6 +1,6 @@
 
 import click
-from . import app
+from . import libs
 
 
 @click.group()
@@ -28,7 +28,7 @@ def create_package(package_name):
     """
     if package_name is '':
         raise Exception('empty package name.')
-    app.create_package(package_name=package_name)
+    libs.create_package(package_name=package_name)
     
 
 
