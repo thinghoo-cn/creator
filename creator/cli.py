@@ -18,7 +18,7 @@ def hello(count, name):
 
 
 @click.command()
-@click.option("--package_name", default="", help="package name")
+@click.option("-p", "--package_name", default="", help="package name")
 def create_package(package_name):
     """create python package command
 
