@@ -17,7 +17,7 @@ setup(
         'dev': dev_requires,
     },
     entry_points={
-        'console_scripts': ['hellopy=creator.hello:main'],
+        'console_scripts': ['creator=creator.cli:cli'],
         'creator.main': [
             'main = creator.__main__'
         ]

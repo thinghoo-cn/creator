@@ -26,10 +26,9 @@ def create_package(package_name):
     Args:
         package_name (str): name of package
     """
-    if package_name is '':
+    if package_name == '':
         raise Exception('empty package name.')
     libs.create_package(package_name=package_name)
-    
 
 
 cli.add_command(hello)
